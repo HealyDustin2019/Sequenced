@@ -13,15 +13,17 @@ public class Main
 	}
 	public static void sq(){
 	    int x = 1;
+	    System.out.print("First 10 Square Numbers: ");
 	    while(x < 11){
-	        System.out.println(x*x);
+	        System.out.print(x*x+" ");
 	        x++;
 	    }
 	}
 	public static void cu(){
 	    int x = 1;
+	    System.out.print("First 10 Cube Numbers: ");
 	    while(x < 11){
-	        System.out.println(x*x*x);
+	        System.out.print(x*x*x+" ");
 	        x++;
 	    }
 	}
@@ -30,33 +32,39 @@ public class Main
 	    int y = 1;
 	    int z = 0;
 	    int s = 0;
+	    System.out.print("First 10 Fibonacci Numbers from 1: ");
 	    while(z < 11){
 	        z++;
 	        if(z > 1)
-	            System.out.println(x+y);
+	            System.out.print(x+y+" ");
 	        s = y;
 	        y = x;
 	        x = x + s;
 	    }
 	}
 	public static void pr(){
-	    int x = 4;
-	    int y = 0;
-	    System.out.println("2\n3");
-	    while(y < 10){
-	        if(x % 2 != 0 && x % 3 != 0){
-	            System.out.println(x);
-	            y++;
-	        }
-	        x++;
-	    }
+	    System.out.print("First 10 Prime Numbers: ");
+	    for(int x = 0; x < 30; x++){
+          int y = 0;
+          int z = 1;
+          while(z <= x){
+            if(x % z == 0){
+            y++;
+            }
+        z++;
+    }
+    if(y == 2){
+        System.out.print(x+" ");
+    }
+}
 	}
 	public static void tr(){
 	    int x = 0;
 	    int y = 1;
 	    int z = 0;
+	    System.out.print("First 10 Triangle Numbers: ");
 	    while(z < 10){
-	        System.out.println(x+y);
+	        System.out.print(x+y+" ");
 	        x = x + y;
 	        y++;
 	        z++;
